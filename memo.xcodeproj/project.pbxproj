@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3406EE5C26DCD5D800E1EC9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE5B26DCD5D800E1EC9B /* AppDelegate.swift */; };
 		3406EE5E26DCD5D800E1EC9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE5D26DCD5D800E1EC9B /* SceneDelegate.swift */; };
-		3406EE6026DCD5D800E1EC9B /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE5F26DCD5D800E1EC9B /* MemoViewController.swift */; };
+		3406EE6026DCD5D800E1EC9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE5F26DCD5D800E1EC9B /* ContentView.swift */; };
 		3406EE6226DCD5DA00E1EC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6126DCD5DA00E1EC9B /* Assets.xcassets */; };
 		3406EE6526DCD5DA00E1EC9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6426DCD5DA00E1EC9B /* Preview Assets.xcassets */; };
 		3406EE6826DCD5DA00E1EC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6626DCD5DA00E1EC9B /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		3406EE5826DCD5D800E1EC9B /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406EE5B26DCD5D800E1EC9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3406EE5D26DCD5D800E1EC9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3406EE5F26DCD5D800E1EC9B /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		3406EE5F26DCD5D800E1EC9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3406EE6126DCD5DA00E1EC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3406EE6426DCD5DA00E1EC9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3406EE6726DCD5DA00E1EC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				3406EE5B26DCD5D800E1EC9B /* AppDelegate.swift */,
 				3406EE5D26DCD5D800E1EC9B /* SceneDelegate.swift */,
-				3406EE5F26DCD5D800E1EC9B /* MemoViewController.swift */,
+				3406EE5F26DCD5D800E1EC9B /* ContentView.swift */,
 				3406EE6126DCD5DA00E1EC9B /* Assets.xcassets */,
 				3406EE6626DCD5DA00E1EC9B /* LaunchScreen.storyboard */,
 				3406EE6926DCD5DA00E1EC9B /* Info.plist */,
@@ -147,7 +147,7 @@
 			files = (
 				3406EE5C26DCD5D800E1EC9B /* AppDelegate.swift in Sources */,
 				3406EE5E26DCD5D800E1EC9B /* SceneDelegate.swift in Sources */,
-				3406EE6026DCD5D800E1EC9B /* MemoViewController.swift in Sources */,
+				3406EE6026DCD5D800E1EC9B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
