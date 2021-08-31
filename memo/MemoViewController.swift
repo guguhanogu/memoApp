@@ -13,7 +13,7 @@ class MemoViewController: UIViewController{
         
         let testLabel = UILabel()
         
-        testLabel.text = "테스트 중입니다."
+        testLabel.text = "메모 목록화면 / 테스트 중입니다."
         testLabel.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(testLabel)
@@ -35,7 +35,7 @@ class MemoViewController: UIViewController{
 
 
 
-
+// for Canvas
 import SwiftUI
 
 struct MemoViewControllerRepresentable: UIViewControllerRepresentable {
