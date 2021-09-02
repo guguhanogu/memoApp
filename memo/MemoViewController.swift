@@ -11,20 +11,32 @@ class MemoViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let testLabel = UILabel()
+        configureTestLabel()
+        configureTestButton()
+    }
+    
+    func configureTestButton() {
+        let testButton = UIButton()
+        testButton.setTitle("정렬", for: .normal)
+        testButton.backgroundColor = .purple
+        testButton.translatesAutoresizingMaskIntoConstraints = false
         
-        testLabel.text = "메모 목록화면 / 테스트 중입니다."
-        testLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(testLabel)
+        view.addSubview(testButton)
         
         let safeArea = view.safeAreaLayoutGuide
         
-        testLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16).isActive = true
-        testLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16).isActive = true
-        
+        testButton.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 20).isActive = true
+        testButton.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -20).isActive = true
+        testButton.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -20).isActive = true
     }
     
+    func configureTestLabel() {
+        let testLabel = UILabel()
+        testLabel.text = "UIButton 테스트 중입니다. \nmade by 최한호"
+        testLabel.translatesAutoresizingMaskIntoConstraints = false
+        testLabel.textColor = .systemPink
+        testLabel.numberOfLines = 0
+    }
 }
 
 
