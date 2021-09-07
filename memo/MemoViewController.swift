@@ -5,6 +5,7 @@
 //  Created by 최한호 on 2021/08/30.
 //
 import UIKit
+import SnapKit
 
 class MemoViewController: UIViewController{
     
@@ -25,9 +26,12 @@ class MemoViewController: UIViewController{
         
         let safeArea = view.safeAreaLayoutGuide
         
-        testButton.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 20).isActive = true
-        testButton.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -20).isActive = true
-        testButton.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -20).isActive = true
+        testButton.snp.makeConstraints { make in
+            make.leading.equalTo(20)
+            make.bottom.equalTo(-20)
+            make.trailing.equalTo(-20)
+        }
+        
     }
     
     func configureTestLabel() {
