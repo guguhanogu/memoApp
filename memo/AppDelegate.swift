@@ -4,7 +4,6 @@
 //
 //  Created by 최한호 on 2021/08/30.
 //
-
 import UIKit
 
 @main
@@ -15,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let firstViewController = MemoViewController()
+        let firstViewController = MemoListViewController()
         let navigationController = UINavigationController(rootViewController: firstViewController)
         navigationController.navigationItem.title = "네비게이션 타이틀"
         window?.rootViewController = navigationController

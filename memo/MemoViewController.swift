@@ -4,6 +4,7 @@
 //
 //  Created by 최한호 on 2021/08/30.
 //
+/*
 import UIKit
 import SnapKit
 
@@ -188,7 +189,7 @@ class MemoViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "FirstViewController"
+        title = "메모"
         firstView.firstButton.addTarget(self, action: #selector(firstButtonPressed(_:)), for: .touchUpInside)
         firstView.secondButton.addTarget(self, action: #selector(secondButtonPressed(_:)), for: .touchUpInside)
     }
@@ -303,3 +304,5 @@ struct ViewPreview: PreviewProvider {
         MemoViewControllerRepresentable()
     }
 }
+
+*/
