@@ -12,6 +12,18 @@ import SnapKit
 
 class MemoListView: UIView {
     
+    
+    /*
+    let leftButton: UIBarButtonItem = {
+        let leftButton = UIBarButtonItem()
+        leftButton.title = "정렬"
+        leftButton.style = .plain
+        leftButton.action = #selector(buttonPressed(_:))
+        
+        return leftButton
+    }()
+ */
+    
     let firstButton: UIButton = {
         let firstButton = UIButton()
         firstButton.setTitle("메모 내용 뷰로 가기", for: .normal)
@@ -31,6 +43,7 @@ class MemoListView: UIView {
         
         return secondButton
     }()
+    
     
     
     func makeSubview() {
