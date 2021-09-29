@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		3406EE6226DCD5DA00E1EC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6126DCD5DA00E1EC9B /* Assets.xcassets */; };
 		3406EE6526DCD5DA00E1EC9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6426DCD5DA00E1EC9B /* Preview Assets.xcassets */; };
 		3406EE6826DCD5DA00E1EC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406EE6626DCD5DA00E1EC9B /* LaunchScreen.storyboard */; };
+		3406EE7526F4695200E1EC9B /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7426F4695200E1EC9B /* MemoListView.swift */; };
+		3406EE7726F469C300E1EC9B /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7626F469C300E1EC9B /* MemoListViewController.swift */; };
+		3406EE7926F469E800E1EC9B /* MemoContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7826F469E800E1EC9B /* MemoContentsView.swift */; };
+		3406EE7B26F469F600E1EC9B /* MemoContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7A26F469F600E1EC9B /* MemoContentsViewController.swift */; };
+		3406EE7D26F46A0400E1EC9B /* MemoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7C26F46A0400E1EC9B /* MemoEditorView.swift */; };
+		3406EE7F26F46A1000E1EC9B /* MemoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406EE7E26F46A1000E1EC9B /* MemoEditorViewController.swift */; };
 		FFAB2361C6CF04DB69243333 /* Pods_memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27707BCA7DDFAE655013883D /* Pods_memo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,12 @@
 		3406EE6426DCD5DA00E1EC9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3406EE6726DCD5DA00E1EC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3406EE6926DCD5DA00E1EC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3406EE7426F4695200E1EC9B /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		3406EE7626F469C300E1EC9B /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		3406EE7826F469E800E1EC9B /* MemoContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoContentsView.swift; sourceTree = "<group>"; };
+		3406EE7A26F469F600E1EC9B /* MemoContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoContentsViewController.swift; sourceTree = "<group>"; };
+		3406EE7C26F46A0400E1EC9B /* MemoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditorView.swift; sourceTree = "<group>"; };
+		3406EE7E26F46A1000E1EC9B /* MemoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditorViewController.swift; sourceTree = "<group>"; };
 		AB698784D4E09FFB021BED53 /* Pods-memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.debug.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.debug.xcconfig"; sourceTree = "<group>"; };
 		DB7B5E5375B84DD1C84A53E6 /* Pods-memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.release.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +75,9 @@
 		3406EE5A26DCD5D800E1EC9B /* memo */ = {
 			isa = PBXGroup;
 			children = (
+				3406EE7126F4688D00E1EC9B /* MemoList */,
+				3406EE7226F4690800E1EC9B /* MemoContents */,
+				3406EE7326F4691600E1EC9B /* MemoEditor */,
 				3406EE5B26DCD5D800E1EC9B /* AppDelegate.swift */,
 				3406EE5D26DCD5D800E1EC9B /* SceneDelegate.swift */,
 				3406EE5F26DCD5D800E1EC9B /* MemoViewController.swift */,
@@ -82,6 +97,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3406EE7126F4688D00E1EC9B /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				3406EE7426F4695200E1EC9B /* MemoListView.swift */,
+				3406EE7626F469C300E1EC9B /* MemoListViewController.swift */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		3406EE7226F4690800E1EC9B /* MemoContents */ = {
+			isa = PBXGroup;
+			children = (
+				3406EE7826F469E800E1EC9B /* MemoContentsView.swift */,
+				3406EE7A26F469F600E1EC9B /* MemoContentsViewController.swift */,
+			);
+			path = MemoContents;
+			sourceTree = "<group>";
+		};
+		3406EE7326F4691600E1EC9B /* MemoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				3406EE7C26F46A0400E1EC9B /* MemoEditorView.swift */,
+				3406EE7E26F46A1000E1EC9B /* MemoEditorViewController.swift */,
+			);
+			path = MemoEditor;
+			sourceTree = "<group>";
+		};
 		9EF990509AF577C331AC497A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +138,6 @@
 				AB698784D4E09FFB021BED53 /* Pods-memo.debug.xcconfig */,
 				DB7B5E5375B84DD1C84A53E6 /* Pods-memo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,7 +257,13 @@
 			files = (
 				3406EE5C26DCD5D800E1EC9B /* AppDelegate.swift in Sources */,
 				3406EE5E26DCD5D800E1EC9B /* SceneDelegate.swift in Sources */,
+				3406EE7926F469E800E1EC9B /* MemoContentsView.swift in Sources */,
+				3406EE7726F469C300E1EC9B /* MemoListViewController.swift in Sources */,
+				3406EE7526F4695200E1EC9B /* MemoListView.swift in Sources */,
+				3406EE7B26F469F600E1EC9B /* MemoContentsViewController.swift in Sources */,
 				3406EE6026DCD5D800E1EC9B /* MemoViewController.swift in Sources */,
+				3406EE7D26F46A0400E1EC9B /* MemoEditorView.swift in Sources */,
+				3406EE7F26F46A1000E1EC9B /* MemoEditorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
