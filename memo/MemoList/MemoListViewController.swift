@@ -19,6 +19,11 @@ class MemoListViewController: UIViewController{
         return button
     }()
     
+    lazy var rightButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(title: "새 메모", style: .plain, target: self, action: #selector(secondButtonPressed(_:)))
+        
+        return button
+    }()
     
     
     
@@ -33,6 +38,7 @@ class MemoListViewController: UIViewController{
         title = "메모 목록"
         
         self.navigationItem.leftBarButtonItem = self.leftButton
+        self.navigationItem.rightBarButtonItem = self.rightButton
         
         listView.firstButton.addTarget(self, action: #selector(firstButtonPressed(_:)), for: .touchUpInside)
         listView.secondButton.addTarget(self, action: #selector(secondButtonPressed(_:)), for: .touchUpInside)
@@ -45,7 +51,7 @@ class MemoListViewController: UIViewController{
     
     
     @objc private func buttonPressed(_: UIBarButtonItem) {
-        let actionSheet = UIAlertController(title: "정렬", message: "선택한 기준으로 리스트가 정렬됩니다.", preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "정렬", message: "선택한 기준으로 리스트가 정렬됩니다", preferredStyle: .actionSheet)
         
         actionSheet.addAction(UIAlertAction(title: "제목", style: .default, handler: {(ACTION:UIAlertAction) in print("제목 순으로 정렬합니다.")
         }))
