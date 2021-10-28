@@ -24,6 +24,7 @@ class MemoListView: UIView {
     }()
  */
     
+    /*
     let firstButton: UIButton = {
         let firstButton = UIButton()
         firstButton.setTitle("메모 내용 뷰로 가기", for: .normal)
@@ -67,11 +68,16 @@ class MemoListView: UIView {
             secondButton.heightAnchor.constraint(equalToConstant: 100),
         ])
     }
+     */
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        /*
         makeSubview()
         makeConstraint()
+        */
+        
         backgroundColor = .white
     }
     
